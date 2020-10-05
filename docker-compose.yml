@@ -26,6 +26,8 @@ services:
     restart: always
     ports:
       - '3307:3306'
+    volumes:
+      - ~/php-apache & mysql/mysql:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=biblioteca
