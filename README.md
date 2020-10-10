@@ -56,6 +56,13 @@ Execute comandos nesse caso, tente executar bash (logout ou ctrl-d para sair)
 $ multipass exec maneger -- bash
  ```
 
+Confira as instâncias em execução
+```
+$ multipass ls
+Name                    State             IPv4             Image
+maneger                 Running           N/A              Ubuntu 20.04 LTS
+```
+
 # More information
 https://multipass.run/docs
 
