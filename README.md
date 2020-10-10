@@ -22,31 +22,48 @@ No Windows
 ```
 https://multipass.run/download/windows
 ```
-Para macOS, você pode baixar os instaladores no link ou usar Homebrew:
+Para macOS, você pode baixar os instalador no link ou usar Homebrew:
 ```
 https://multipass.run/download/macos
 ```
 ```
 brew cask install multipass
 ```
+Lista Imagens disponiveis (10/10/20)
+```
+$ multipass find
+Image                       Aliases           Version          Description
+core                        core16            20200818         Ubuntu Core 16
+core18                                        20200812         Ubuntu Core 18
+16.04                       xenial            20200922         Ubuntu 16.04 LTS
+18.04                       bionic            20200922         Ubuntu 18.04 LTS
+20.04                       focal,lts         20200921.1       Ubuntu 20.04 LTS
+appliance:adguard-home                        20200812         Ubuntu AdGuard Home Appliance
+appliance:lxd                                 20200812         Ubuntu LXD Appliance
+appliance:mosquitto                           20200812         Ubuntu Mosquitto Appliance
+appliance:nextcloud                           20200812         Ubuntu Nextcloud Appliance
+appliance:openhab                             20200812         Ubuntu openHAB Home Appliance
+appliance:plexmediaserver                     20200812         Ubuntu Plex Media Server Appliance
+```
+
+Inicie uma instância
+```
+$ multipass launch 20.04 --name maneger
+```
+
+Execute comandos nesse caso, tente executar bash (logout ou ctrl-d para sair)
+```
+$ multipass exec maneger -- bash
+ ```
+
+# More information
+https://multipass.run/docs
 
 
-
-
-
-
-
-
-
-
-
-
-
-`multipass launch --name nome_da_sua_vm`
-
-https://multipass.run/
 
 
 
 # php-apache-mysql
 dockerfile php-apache &amp; mysql
+
+
