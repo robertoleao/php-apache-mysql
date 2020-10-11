@@ -1,4 +1,4 @@
-# php-apache-mysql
+# php-apache-mysql-portainer
 
 ```
 $ docker-compose up -d
